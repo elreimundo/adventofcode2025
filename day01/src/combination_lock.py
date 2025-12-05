@@ -25,8 +25,6 @@ class CombinationLock:
 				)
 				or modular_new_value == self.target_value # landing on 0
 			):
-				print(f'turning {rotation.direction} {rotation.amount}, currently turning {this_rotation_amount} from {new_value} to {modular_new_value}')
-				print("click")
 				self.click_count += 1
 			new_value = modular_new_value
 			remaining_value -= this_rotation_amount
